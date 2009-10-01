@@ -22,7 +22,7 @@ function tableView_numberOfRowsInSection(self, tableView, section)
 end
 
 function tableView_cellForRowAtIndexPath(self, tableView, indexPath)  
-  local identifier = "BasicTableViewCell"
+  local identifier = "TableViewCell"
   local cell = tableView:dequeueReusableCellWithIdentifier(identifier)
   cell = cell or UI.TableViewCell:initWithStyle_reuseIdentifier(UITableViewCellStyleDefault, identifier)  
 
